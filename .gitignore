@@ -1,0 +1,13 @@
+## IDE
+.idea
+.vscode
+
+## local and backups
+*~
+*.bak
+*.local
+*.swp
+*.tmp
+
+## Python App
+venv
