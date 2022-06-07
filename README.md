@@ -25,9 +25,23 @@ $ curl 'http://127.0.0.1:8080/minus?a=10&b=4'
 a = 10, b = 4
 a + b = 6
 
+$ curl 'http://127.0.0.1:8080/multiply?a=10&b=5'
+a = 10, b = 5
+a * b = 50
+
+$ curl 'http://127.0.0.1:8080/divide?a=10&b=2'
+a = 10, b = 2
+a / b = 5.0
+
 $ curl 'http://127.0.0.1:8080/api/plus?a=10&b=5'
 {"result": "15"}
 
 $ curl 'http://127.0.0.1:8080/api/minus?a=10&b=4'
 {"result": "6"}
+
+$ curl 'http://127.0.0.1:8080/multiply?a=10&b=5'
+{"result": "50"}
+
+$ curl 'http://127.0.0.1:8080/divide?a=10&b=2'
+{"result": "5.0"}
 ```

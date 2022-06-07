@@ -50,7 +50,37 @@ def api_plus():
     txt = '{"result": "' + str(res) + '"}\n'
     return flask.Response(txt, mimetype='text/json')
 
+@app.route('/multiply')
+def multiply():
+    a = flask.request.args.get('a')
+    b = flask.request.args.get('b')
+    res = int(a) * int(b)
+    txt = 'a = ' + a + ', b = ' + b + '\na * b = ' + str(res) + '\n'
+    return flask.Response(txt, mimetype='text/plain')
 
+@app.route('/api/multiply')
+def api_multiply():
+    a = flask.request.args.get('a')
+    b = flask.request.args.get('b')
+    res = int(a) * int(b)
+    txt = '{"result": "' + str(res) + '"}\n'
+    return flask.Response(txt, mimetype='text/json')
+
+@app.route('/divide')
+def divide():
+    a = flask.request.args.get('a')
+    b = flask.request.args.get('b')
+    res = int(a) / int(b)
+    txt = 'a = ' + a + ', b = ' + b + '\na / b = ' + str(res) + '\n'
+    return flask.Response(txt, mimetype='text/plain')
+
+@app.route('/api/divide')
+def api_divide():
+    a = flask.request.args.get('a')
+    b = flask.request.args.get('b')
+    res = int(a) / int(b)
+    txt = '{"result": "' + str(res) + '"}\n'
+    return flask.Response(txt, mimetype='text/json')
 # @app.route('/py3/hits')
 # def hits():
 #     dt_iso = datetime.datetime.utcnow().replace(microsecond=0, tzinfo=datetime.timezone.utc).isoformat()
