@@ -11,3 +11,6 @@
 
 ## Python App
 venv
+build
+dist
+__pycache__
