@@ -47,5 +47,5 @@ $ curl 'http://127.0.0.1:8080/divide?a=10&b=2'
 ```
 ### Nim
 ```console
-nim c -r --verbosity:0 htmlclient.nim
+$ nim c -r --verbosity:0 htmlclient.nim
 ```
