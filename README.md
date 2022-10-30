@@ -45,3 +45,7 @@ $ curl 'http://127.0.0.1:8080/multiply?a=10&b=5'
 $ curl 'http://127.0.0.1:8080/divide?a=10&b=2'
 {"result": "5.0"}
 ```
+### Nim
+```console
+nim c -r --verbosity:0 htmlclient.nim
+```
